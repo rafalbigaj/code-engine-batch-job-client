@@ -9,7 +9,7 @@
 package v1beta1
 
 import (
-	"github.ibm.com/coligo/batch-job-controller/pkg/utils/pointers"
+	"github.com/rafal-bigaj/code-engine-batch-job-client/pkg/utils/pointers"
 )
 
 // SetDefaults sets defaults for JobRun.

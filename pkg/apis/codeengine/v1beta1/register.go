@@ -30,7 +30,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.ibm.com/coligo/batch-job-controller/pkg/apis/codeengine"
+	"github.com/rafal-bigaj/code-engine-batch-job-client/pkg/apis/codeengine"
 )
 
 // SchemeGroupVersion is group version used to register these objects

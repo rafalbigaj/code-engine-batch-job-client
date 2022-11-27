@@ -36,7 +36,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/informers/internalinterfaces"
 
-	"github.ibm.com/coligo/batch-job-controller/pkg/apis/codeengine"
+	"github.com/rafal-bigaj/code-engine-batch-job-client/pkg/apis/codeengine"
 )
 
 var (
