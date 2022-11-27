@@ -9,7 +9,7 @@
 package v1beta1
 
 import (
-	"github.com/rafal-bigaj/code-engine-batch-job-client/pkg/utils/pointers"
+	"k8s.io/utils/pointer"
 )
 
 // SetDefaults sets defaults for JobRun.
@@ -25,15 +25,15 @@ func (js *JobRunSpec) SetDefaults() {
 	}
 
 	if js.JobDefinitionSpec.ArraySpec == nil {
-		js.JobDefinitionSpec.ArraySpec = pointers.StringPtr("0")
+		js.JobDefinitionSpec.ArraySpec = pointer.String("0")
 	}
 
 	if js.JobDefinitionSpec.RetryLimit == nil {
-		js.JobDefinitionSpec.RetryLimit = pointers.Int64Ptr(3)
+		js.JobDefinitionSpec.RetryLimit = pointer.Int64(3)
 	}
 
 	if js.JobDefinitionSpec.MaxExecutionTime == nil {
-		js.JobDefinitionSpec.MaxExecutionTime = pointers.Int64Ptr(7200)
+		js.JobDefinitionSpec.MaxExecutionTime = pointer.Int64(7200)
 	}
 }
 

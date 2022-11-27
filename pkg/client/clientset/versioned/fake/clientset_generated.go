@@ -74,7 +74,10 @@ func (c *Clientset) Tracker() testing.ObjectTracker {
 	return c.tracker
 }
 
-var _ clientset.Interface = &Clientset{}
+var (
+	_ clientset.Interface = &Clientset{}
+	_ testing.FakeClient  = &Clientset{}
+)
 
 // CodeengineV1beta1 retrieves the CodeengineV1beta1Client
 func (c *Clientset) CodeengineV1beta1() codeenginev1beta1.CodeengineV1beta1Interface {

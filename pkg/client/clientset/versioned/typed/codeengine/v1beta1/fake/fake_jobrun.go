@@ -117,7 +117,7 @@ func (c *FakeJobRuns) UpdateStatus(ctx context.Context, jobRun *v1beta1.JobRun, 
 // Delete takes name of the jobRun and deletes it. Returns an error if one occurs.
 func (c *FakeJobRuns) Delete(ctx context.Context, name string, opts v1.DeleteOptions) error {
 	_, err := c.Fake.
-		Invokes(testing.NewDeleteAction(jobrunsResource, c.ns, name), &v1beta1.JobRun{})
+		Invokes(testing.NewDeleteActionWithOptions(jobrunsResource, c.ns, name, opts), &v1beta1.JobRun{})
 
 	return err
 }
