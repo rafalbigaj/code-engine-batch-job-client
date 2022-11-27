@@ -19,8 +19,8 @@ limitations under the License.
 package codeengine
 
 import (
-	v1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1"
-	internalinterfaces "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/internalinterfaces"
+	v1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1"
+	internalinterfaces "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

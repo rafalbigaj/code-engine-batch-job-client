@@ -24,9 +24,9 @@ import (
 	errors "errors"
 	fmt "fmt"
 
-	v1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
-	versioned "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
-	typedcodeenginev1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned/typed/codeengine/v1beta1"
+	v1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
+	versioned "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
+	typedcodeenginev1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned/typed/codeengine/v1beta1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	unstructured "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	runtime "k8s.io/apimachinery/pkg/runtime"
@@ -66,10 +66,10 @@ func Get(ctx context.Context) versioned.Interface {
 	if untyped == nil {
 		if injection.GetConfig(ctx) == nil {
 			logging.FromContext(ctx).Panic(
-				"Unable to fetch github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned.Interface from context. This context is not the application context (which is typically given to constructors via sharedmain).")
+				"Unable to fetch github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned.Interface from context. This context is not the application context (which is typically given to constructors via sharedmain).")
 		} else {
 			logging.FromContext(ctx).Panic(
-				"Unable to fetch github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned.Interface from context.")
+				"Unable to fetch github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned.Interface from context.")
 		}
 	}
 	return untyped.(versioned.Interface)

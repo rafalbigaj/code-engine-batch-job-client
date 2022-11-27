@@ -21,9 +21,9 @@ package fakeFilteredFactory
 import (
 	context "context"
 
-	externalversions "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions"
-	fake "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/client/fake"
-	filtered "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory/filtered"
+	externalversions "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions"
+	fake "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/client/fake"
+	filtered "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory/filtered"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"

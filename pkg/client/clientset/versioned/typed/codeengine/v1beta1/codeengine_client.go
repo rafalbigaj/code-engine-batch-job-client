@@ -21,8 +21,8 @@ package v1beta1
 import (
 	"net/http"
 
-	v1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
-	"github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned/scheme"
+	v1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
+	"github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

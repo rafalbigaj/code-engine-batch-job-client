@@ -21,12 +21,12 @@ package jobrun
 import (
 	context "context"
 
-	apiscodeenginev1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
-	versioned "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
-	v1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1"
-	client "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/client"
-	factory "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory"
-	codeenginev1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/listers/codeengine/v1beta1"
+	apiscodeenginev1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
+	versioned "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
+	v1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1"
+	client "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/client"
+	factory "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory"
+	codeenginev1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/listers/codeengine/v1beta1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	cache "k8s.io/client-go/tools/cache"
@@ -59,7 +59,7 @@ func Get(ctx context.Context) v1beta1.JobRunInformer {
 	untyped := ctx.Value(Key{})
 	if untyped == nil {
 		logging.FromContext(ctx).Panic(
-			"Unable to fetch github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1.JobRunInformer from context.")
+			"Unable to fetch github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1.JobRunInformer from context.")
 	}
 	return untyped.(v1beta1.JobRunInformer)
 }

@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
-	codeengine "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine"
-	internalinterfaces "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/internalinterfaces"
+	versioned "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
+	codeengine "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine"
+	internalinterfaces "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/internalinterfaces"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

@@ -36,7 +36,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/informers/internalinterfaces"
 
-	"github.com/rafal-bigaj/code-engine-batch-job-client/pkg/apis/codeengine"
+	"github.com/rafalbigaj/code-engine-batch-job-client/pkg/apis/codeengine"
 )
 
 var (
@@ -229,7 +229,7 @@ func (j *JobRun) IsJobRunFinished() bool {
 	return j.CheckCondition(JobComplete) || j.CheckCondition(JobFailed)
 }
 
-//UpdateStatusCounts updates job pods status counts.
+// UpdateStatusCounts updates job pods status counts.
 func (j *JobRun) UpdateStatusCounts(total int64, podStatus []corev1.PodPhase) {
 	var unknown, pending, running, succeeded, failed int64
 	for _, ps := range podStatus {

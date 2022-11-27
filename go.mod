@@ -1,4 +1,4 @@
-module github.com/rafal-bigaj/code-engine-batch-job-client
+module github.com/rafalbigaj/code-engine-batch-job-client
 
 go 1.18
 

@@ -21,8 +21,8 @@ package fake
 import (
 	context "context"
 
-	jobdefinition "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/informers/codeengine/v1beta1/jobdefinition"
-	fake "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory/fake"
+	jobdefinition "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/informers/codeengine/v1beta1/jobdefinition"
+	fake "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory/fake"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 )

@@ -21,9 +21,9 @@ package fake
 import (
 	context "context"
 
-	externalversions "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions"
-	fake "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/client/fake"
-	factory "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory"
+	externalversions "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions"
+	fake "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/client/fake"
+	factory "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 )

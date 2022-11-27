@@ -21,12 +21,12 @@ package filtered
 import (
 	context "context"
 
-	apiscodeenginev1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
-	versioned "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
-	v1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1"
-	client "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/client"
-	filtered "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory/filtered"
-	codeenginev1beta1 "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/listers/codeengine/v1beta1"
+	apiscodeenginev1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/apis/codeengine/v1beta1"
+	versioned "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/clientset/versioned"
+	v1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1"
+	client "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/client"
+	filtered "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/injection/informers/factory/filtered"
+	codeenginev1beta1 "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/listers/codeengine/v1beta1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	cache "k8s.io/client-go/tools/cache"
@@ -81,7 +81,7 @@ func Get(ctx context.Context, selector string) v1beta1.JobRunInformer {
 	untyped := ctx.Value(Key{Selector: selector})
 	if untyped == nil {
 		logging.FromContext(ctx).Panicf(
-			"Unable to fetch github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1.JobRunInformer with selector %s from context.", selector)
+			"Unable to fetch github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/codeengine/v1beta1.JobRunInformer with selector %s from context.", selector)
 	}
 	return untyped.(v1beta1.JobRunInformer)
 }

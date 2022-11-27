@@ -19,7 +19,7 @@ limitations under the License.
 package v1beta1
 
 import (
-	internalinterfaces "github.com/rafal-bigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/internalinterfaces"
+	internalinterfaces "github.com/rafalbigaj/code-engine-batch-job-client/pkg/client/informers/externalversions/internalinterfaces"
 )
 
 // Interface provides access to all the informers in this group version.
